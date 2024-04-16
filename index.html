@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Fiverr Fee Calculator: as a seller</title>
+	<link rel="stylesheet" href="style.css">
+	<script src="main.js" defer></script>
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+
+</head>
+<body>
+	<div class="form-wrapper">
+		<div class="form">
+			<h2 class="h2">Fiverr Fee Calculator for seller</h2>
+			<form action="#" id="sellerForm">
+				<h3>Enter order ammount:</h3>
+				<div class="row-input">
+					<input onkeyup="calculator()" type="number" min="1" max="10000000" class="input priceValue" placeholder="$0,000.0"  >
+					<div class="symbol">$</div>
+				</div>
+
+				<h3 class="tip">TIP ammount:</h3>
+				<div class="row-input">
+					<input onkeyup="calculator()" type="number" min="1" max="10000000" class="input tipValue" placeholder="$0,000.0"  >
+					<div class="symbol">$</div>
+				</div>
+
+				<div class="results">
+					<div class="left-col">
+						You’ll earn:
+						<div class="earn">-</div>
+					</div>
+					<div class="right-col">
+						Fiverr takes:
+						<div class="fiverr">-</div>
+					</div>
+				</div>
+
+				<div class="full-col">
+						Buyer Paid:
+						<div class="buyer-paid">-</div>
+					
+				</div>
+			</form>
+		</div>
+	</div>
+</body>
+</html>

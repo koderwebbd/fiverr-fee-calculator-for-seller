@@ -1,0 +1,114 @@
+*{
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+body{
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+.form-wrapper{
+  width: 100%;
+  height: 100%;
+}
+.form {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+}
+h2{
+  font-weight: 700;
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+h3 {
+  margin-bottom: 15px;
+  font-weight: 700;
+  font-size: 18px;
+}
+form#sellerForm {
+    background: rgb(248, 248, 248);
+    width: 500px;
+    padding: 30px;
+    border-radius: 8px;
+    -webkit-box-shadow: 0px 0px 3px rgb(0 0 0 / 30%);
+            box-shadow: 0px 0px 3px rgb(0 0 0 / 30%);
+}
+.row-input {
+  position: relative
+}
+input.input {
+  border: 1px solid #d8d8d8;
+  padding: 15px 25px;
+  color: #000;
+  width: 100%;
+  font-size: 20px;
+}
+.symbol{
+  position: absolute;
+  left: 13px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  display: none;
+}
+.tip{
+  margin-top: 20px;
+}
+.results {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-flow: wrap-reverse;
+          flex-flow: wrap-reverse;
+}
+.results .left-col,
+.results .right-col,
+.full-col{
+  width: 50%;
+  padding-top: 30px;
+  font-size: 20px;
+  font-weight: 700;
+}
+.earn,
+.fiverr,
+.buyer-paid {
+  font-size: 17px;
+  margin-top: 10px;
+}
+.earn {
+    color: green;
+}
+.fiverr {
+    color: red;
+}
+.buyer-paid {
+    color: darkorange;
+}
+@media screen and (max-width: 501px ){
+  form#sellerForm {
+    width: 300px;
+  }
+  h2 {
+      font-size: 17px;
+  }
+  h3{
+    font-size: 16px;
+  }
+  .results .left-col, .results .right-col, .full-col {
+    font-size: 15px;
+  }
+  .earn, .fiverr, .buyer-paid {
+      font-size: 14px;
+  }
+}
