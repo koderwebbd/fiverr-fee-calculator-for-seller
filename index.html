@@ -24,13 +24,13 @@
 			<form action="#" id="sellerForm">
 				<h3>Enter order ammount:</h3>
 				<div class="row-input">
-					<input onkeyup="calculator()" type="number" min="1" max="10000000" class="input priceValue" placeholder="$0,000.0"  >
+					<input onkeyup="calculator()" type="number" min="5" max="10000000" class="input priceValue" placeholder="$0,000.0"  >
 					<div class="symbol">$</div>
 				</div>
 
 				<h3 class="tip">TIP ammount:</h3>
 				<div class="row-input">
-					<input onkeyup="calculator()" type="number" min="1" max="10000000" class="input tipValue" placeholder="$0,000.0"  >
+					<input onkeyup="calculator()" type="number" min="5" max="10000000" class="input tipValue" placeholder="$0,000.0"  >
 					<div class="symbol">$</div>
 				</div>
 
@@ -41,15 +41,29 @@
 					</div>
 					<div class="right-col">
 						Fiverr takes:
-						<div class="fiverr">-</div>
+						<div class="seller_from_fiverr fiverr">-</div>
 					</div>
 				</div>
 
-				<div class="full-col">
+				<div class="results">
+					<div class="left-col">
 						Buyer Paid:
 						<div class="buyer-paid">-</div>
-					
+					</div>
+					<div class="right-col">
+						Fiverr takes:
+						<div class="buyer_from_fiverr fiverr">-</div>
+					</div>
+
 				</div>
+
+				<div class="results">
+					<div class="full-col">
+						Fiverr total revenue:
+						<div class="fiver_revenue fiverr">-</div>
+					</div>
+				</div>
+
 			</form>
 		</div>
 	</div>
