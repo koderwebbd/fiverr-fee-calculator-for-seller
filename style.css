@@ -74,15 +74,19 @@ input.input {
 }
 .results .left-col,
 .results .right-col,
-.full-col{
+.results .full-col{
   width: 50%;
   padding-top: 30px;
   font-size: 20px;
   font-weight: 700;
 }
+.results .full-col{
+  width: 100%;
+}
 .earn,
 .fiverr,
-.buyer-paid {
+.buyer-paid,
+.fiver_revenue {
   font-size: 17px;
   margin-top: 10px;
 }
